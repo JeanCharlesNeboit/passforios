@@ -66,6 +66,7 @@ class BasicStaticTableViewController: UITableViewController, MFMailComposeViewCo
             cell?.selectionStyle = .default
         }
 
+        cell?.textLabel?.numberOfLines = 0
         cell?.textLabel?.text = cellData[CellDataKey.title] as? String
         return cell ?? UITableViewCell()
     }

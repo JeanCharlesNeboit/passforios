@@ -418,6 +418,11 @@
 		30F6C1B327664C7200BE5AB2 /* SVProgressHUD.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SVProgressHUD.xcframework; path = Carthage/Build/SVProgressHUD.xcframework; sourceTree = "<group>"; };
 		30FD2F77214D9E0E005E0A92 /* ParserTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserTest.swift; sourceTree = "<group>"; };
 		5F9D7B0C27AF6F7300A8AB22 /* CryptoTokenKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoTokenKit.framework; path = System/Library/Frameworks/CryptoTokenKit.framework; sourceTree = SDKROOT; };
+		7E13ECB8292987E100941EB8 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
+		7E13ECB9292987E100941EB8 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7E13ECBA292987E100941EB8 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7E13ECBB292987E100941EB8 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = fr; path = fr.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		7E13ECBE292987EE00941EB8 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Intents.strings; sourceTree = "<group>"; };
 		9A1EF0B324C50DD80074FEAC /* passBeta.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = passBeta.entitlements; sourceTree = "<group>"; };
 		9A1EF0B424C50E780074FEAC /* passBetaAutoFillExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = passBetaAutoFillExtension.entitlements; sourceTree = "<group>"; };
 		9A1EF0B524C50EE00074FEAC /* passBetaExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = passBetaExtension.entitlements; sourceTree = "<group>"; };
@@ -1338,6 +1343,7 @@
 				en,
 				Base,
 				de,
+				fr,
 			);
 			mainGroup = DC917BCA1E2E8231000FDF54;
 			packageReferences = (
@@ -1759,6 +1765,7 @@
 			children = (
 				30BF5EC921EA8FB5000E4154 /* en */,
 				30C25DC421F3BEF500BB27BB /* de */,
+				7E13ECBA292987E100941EB8 /* fr */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -1768,6 +1775,7 @@
 			children = (
 				30BF5ED621ED2434000E4154 /* en */,
 				30C25DC521F3BEF500BB27BB /* de */,
+				7E13ECBB292987E100941EB8 /* fr */,
 			);
 			name = Localizable.stringsdict;
 			sourceTree = "<group>";
@@ -1777,6 +1785,7 @@
 			children = (
 				30C25DBE21F3599E00BB27BB /* en */,
 				30C25DC621F3BEF500BB27BB /* de */,
+				7E13ECB9292987E100941EB8 /* fr */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -1786,6 +1795,7 @@
 			children = (
 				30EE3A18241E98C1009FBB61 /* en */,
 				30EE3A1B241E98C6009FBB61 /* de */,
+				7E13ECBE292987EE00941EB8 /* fr */,
 			);
 			name = Intents.intentdefinition;
 			sourceTree = "<group>";
@@ -1812,6 +1822,7 @@
 				DC917BDB1E2E8231000FDF54 /* Base */,
 				30C25DA921F34D2800BB27BB /* en */,
 				30C25DC321F3BEF500BB27BB /* de */,
+				7E13ECB8292987E100941EB8 /* fr */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

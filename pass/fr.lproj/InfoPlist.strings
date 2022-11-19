@@ -1,0 +1,11 @@
+/*
+ Localizable.strings
+ pass
+
+ Created by Danny Moesch on 19.01.19.
+ Copyright © 2019 Bob Sun. All rights reserved.
+ */
+
+"NSCameraUsageDescription" = "Nous avons besoin de l'accès à votre caméra pour scanner les QR codes.";
+"NSFaceIDUsageDescription" = "Activer l'accès à Face ID pour déverouiller Pass.";
+"NFC Scan Usage Description" = "The application needs access to NFC reading to communicate with your YubiKey."

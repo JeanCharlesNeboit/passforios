@@ -1,0 +1,348 @@
+/* 
+  Localizable.strings
+  pass
+
+  Created by Danny Moesch on 12.01.19.
+  Copyright © 2019 Bob Sun. All rights reserved.
+*/
+
+// General
+"PassForIos"    = "Pass for iOS";
+"PasswordStore" = "Password Store";
+"Passphrase"    = "Passphrase";
+"Password"      = "Mot de passe";
+"Passwords"     = "Mots de passe";
+"Passcode"      = "Code d'accès";
+"Apple"         = "Apple";
+"Settings"      = "Réglages";
+"Contributors"  = "Contributeurs";
+
+// OTP related
+"TimeBased"                 = "Basé sur le temps";
+"HmacBased"                 = "Basé sur HMAC";
+"None"                      = "Aucun";
+"ExpiresIn"                 = "(Expire dans %ds)";
+"OTPForPassword"            = "Mot de passe à usage unique pour %@";
+"OTPHasBeenCopied"          = "... a été copié dans le presse-papiers";
+"CopyToPasteboard"          = "Copier dans le presse-papiers";
+"AutoCopyOTP"               = "Copier automatiquement les mots de passe à usage unique";
+"AutoCopyOTPExplanation."   = "Après que le nom d'utilisateur et le mot de passe aient été remplis automatiquement dans un formulaire par Pass, une notification s'affiche avec le mot de passe à usage unique actuel qui peut être copié dans le presse-papiers. L'activation de cette option permet de copier automatiquement le mot de passe à usage unique actuel.";
+
+// General (error) messages
+"Error"                                             = "Erreur";
+"CannotSave"                                        = "Impossible de sauvegarder";
+"UnresolvedError"                                   = "Erreur non résolue %@";
+"MigrationError"                                    = "Erreur de migration: %@";
+"UnderlyingError"                                   = "Erreur sous-jacente: %@";
+"ErrorSaving"                                       = "Erreur de sauvegarde: %@";
+"CannotCopyPassword"                                = "Impossible de copier le mot de passe";
+"CannotAddPassword"                                 = "Impossible d'ajouter un mot de passe";
+"WrongPassphrase"                                   = "Mauvaise phrase secrète";
+"MakeSurePgpAndGitProperlySet."                     = "Veuillez vous assurer que la clé PGP et le serveur Git sont correctement configurés.";
+"RecoverySuggestion."                               = "Suggestion de récupération : Le mot de passe/phrase d'identification a été supprimé, veuillez réessayer.";
+"NSURLFileAllocatedSizeKeyShouldAlwaysReturnValue." = "Hein ? NSURLFileAllocatedSizeKey devrait toujours retourner une valeur.";
+"NoProperPassRepo."                                 = "Le dépôt ne contient pas de fichier .gpg-id. Veuillez le configurer correctement en exécutant 'pass init'. Puis essayez à nouveau de le charger dans l'application.";
+
+// Settings
+"PasswordGeneratorFlavor"           = "Style";
+"RememberPgpKeyPassphrase"          = "Mémoriser la phrase secrète de la clé PGP";
+"RememberGitCredentialPassphrase"   = "Mémoriser la phrase secrète des identifiants Git";
+"EnableGPGID"                       = "Activer .gpg-id (Beta)";
+"ShowFolders"                       = "Afficher les dossiers";
+"HidePasswordImages"                = "Cacher les images des mots de passe";
+"HidePasswordImagesExplanation."    = "Les images favicon associées sont chargées et affichées en fonction de l'URL associée à une entrée. Activer cette option pour masquer ces images et empêcher leur chargement.";
+"HideUnknownFields"                 = "Masquer les champs inconnus";
+"HideUnknownFieldsExplanation."     = "Seul le format \"key : value\" dans les champs supplémentaires est pris en charge. Les champs non pris en charge se verront attribuer des clés \"inconnues\". Activez ce bouton pour masquer les champs non pris en charge.";
+"HideOtpFields"                     = "Masquer les champs OTP";
+"HideOtpFieldsExplanation."         = "Activer ce commutateur pour masquer les champs relatifs aux mots de passe uniques (c.-à-d. %@).";
+"Random"                            = "Aléatoire";
+"RandomString"                      = "Chaîne de caractères aléatoire";
+"ApplesKeychainStyle"               = "Style du Keychain d'Apple";
+"XKCD"                              = "XKCD";
+
+// Git
+"FailedToFetchPasswords"                = "Échec de la récupération des mots de passe";
+"FailedToFetchPasswordEntities"         = "Échec de la récupération des entités du mot de passe: %@";
+"FailedToInsertPasswordEntity"          = "Échec de l'insertion de l'entité du mot de passe: %@";
+"FailedToDeletePasswordEntity"          = "Échec de la suppression de l'entité du mot de passe: %@";
+"FailedToSavePasswordEntity"            = "Échec de la sauvegarde de l'entité du mot de passe: %@";
+"FailureToSaveContext"                  = "Échec de la sauvegarde du contexte: %@";
+"RepositoryRemoteBranchNotFoundError."  = "Impossible de trouver la branche distante %@.";
+"RepositoryBranchNotFoundError."        = "Branche %@ non trouvée dans le dépôt.";
+"KeyImportError."                       = "Impossible d'importer la clé.";
+"FileNotFoundError."                    = "Le fichier '%@' ne peut pas être lu.";
+"PasswordDuplicatedError."              = "Impossible d'ajouter le mot de passe, le mot de passe est dupliqué.";
+"GitResetError."                        = "Impossible d'identifier le dernier commit synchronisé.";
+"GitCreateSignatureError."              = "Impossible de créer une signature d'auteur/committer valide.";
+"GitPushNotSuccessfulError."            = "L'envoi des modifications locales n'a pas réussi. Assurez-vous qu'il n'y ait pas de modifications non commitées sur le référentiel distant.";
+"WrongPasswordFilenameError."           = "Impossible d'écrire dans le fichier du mot de passe.";
+"DecryptionError."                      = "Impossible de déchiffrer le mot de passe.";
+"EncodingError."                        = "La clé n'est pas encodée en ASCII.";
+"UnknownError."                         = "Erreur inconnue.";
+"PrepareRepository"                     = "Préparation du dépôt";
+"CheckingOutBranch"                     = "Vérification de la branche '%@'.";
+"WantToSaveGitCredential?"              = "Voulez-vous sauvegarder le mot de passe/phrase secrète de l'identifiant Git ?";
+
+// Repository
+"RepositoryNotSetError."                = "Le dépôt Git n'est pas configuré.";
+"SetGitRepositoryUrl"                   = "Veuillez configurer l'URL du dépôt Git.";
+"CannotFindUsername."                   = "Impossible de trouver le nom d'utilisateur dans l'URL du dépôt Git. Exemple d'URL : ssh://git@server/path/to/repo.git.";
+"CheckEnteredUsername."                 = "Veuillez vérifier le nom d'utilisateur saisi et le nom d'utilisateur dans l'URL du dépôt Git. Ils doivent correspondre.";
+"UseEitherHttpsOrHttp."                 = "Veuillez utiliser soit HTTPS (recommandé), soit HTTP.";
+"SpecifySchema."                        = "Veuillez préciser le schéma de l'URL du dépôt Git (HTTPS ou SSH).";
+"Overwrite?"                            = "Écraser ?";
+"Overwrite"                             = "Écraser";
+"OperationWillOverwriteData."           = "Cette opération écrasera les données actuelles de votre gestionnaire de mots de passe (dépôt). Les données sur votre serveur distant ne seront pas affectées.";
+"DownloadFromUrl"                       = "Télécharger à partir d'une URL";
+"AsciiArmorEncryptedKey"                = "Clé ASCII-Armor";
+"ITunesFileSharing"                     = "Partage de fichiers iTunes";
+"Import"                                = "Importation";
+"Imported"                              = "Importé";
+"Tips"                                  = "Astuces";
+"FillInGitAccountPassword."             = "Veuillez saisir le mot de passe de votre compte Git.";
+"NoPasswordStore."                      = "Il n'y a pas de gestionnaire de mots de passe pour le moment.";
+"SyncingPasswordStore"                  = "Synchronisation du gestionnaire de mots de passe";
+"PullingFromRemoteRepository"           = "Récupération à partir du dépôt distant";
+"PushingToRemoteRepository"             = "Envoi vers le dépôt distant";
+"SpecifyBranchName."                    = "Veuillez préciser le nom de la branche à utiliser.";
+
+// SSH
+"FillInSshKeyPassphrase."   = "Veuillez saisir la phrase secrète de votre clé SSH.";
+"CannotSelectSshKey"        = "Impossible de sélectionner la clé SSH";
+"PleaseSetupSshKeyFirst."   = "Veuillez d'abord configurer la clé SSH.";
+"RemoveSShKeys"             = "Supprimer les clés SSH de Git";
+"SetPrivateKeyUrl."         = "Veuillez d'abord définir une URL de clé privée valide.";
+"SshCopyPrivateKeyToPass."  = "Copiez votre clé privée au format ASCII-Armor dans Pass avec le nom \"ssh_key\" (sans guillemets) via iTunes. Revenez ensuite et cliquez sur \"Partage de fichiers iTunes\" pour terminer.";
+
+// QR code scanning
+"LookingForStartingFrame."                  = "Recherche du cadre de départ.";
+"TooManyQrCodes"                            = "Trop de QR codes";
+"ScanPrivateKeyQrCodes"                     = "Scanner les QR codes de la clé privée";
+"CannotSaveSshKey"                          = "Impossible d'enregistrer la clé SSH";
+"ScanPublicKey."                            = "Veuillez scanner la clé publique.";
+"ScanPrivateKey."                           = "Veuillez scanner la clé privée.";
+"ScanPrivateKeyQrCodes"                     = "Scanner les QR codes de la clé privée";
+"ScanPublicKeyQrCodes"                      = "Scanner les QR codes de la clé publique";
+"SetPrivateKey."                            = "Veuillez d'abord définir la clé privée.";
+"SetPublicKey."                             = "Veuillez d'abord définir la clé publique.";
+"NoQrCodeDetected."                         = "Aucun QR code détecté.";
+"NoStringValue"                             = "Aucune valeur de chaîne de caractères";
+"CameraAccessDenied."                       = "Accès à la caméra refusé.";
+"WarningToggleCameraPermissionsResetsApp."  = "Avertissement : la modification des autorisations de la caméra entraîne la réinitialisation de l'application ! Veuillez enregistrer vos données au préalable.";
+
+// PGP
+"Decrypting"                        = "Déchiffrage";
+"PgpKeyNotSet."                     = "La clé PGP n'est pas définie. Veuillez d'abord définir votre clé PGP.";
+"FillInPgpPassphrase."              = "Veuillez saisir la phrase secrète de votre clé secrète PGP.";
+"WantToSavePassphrase?"             = "Voulez-vous enregistrer la phrase secrète pour un déchiffrage ultérieur ?";
+"CannotSavePgpKey"                  = "Impossible d'enregistrer la clé PGP";
+"SetPgpKeyUrlsFirst."               = "Veuillez d'abord définir des URLs de clés PGP valides.";
+"FetchingPgpKey"                    = "Récupération de la clé PGP";
+"RememberToRemoveKey"               = "N'oubliez pas de supprimer les clés";
+"RememberToRemoveKeyFromServer."    = "N'oubliez pas de supprimer les clés du serveur.";
+"RemovePgpKeys"                     = "Supprimer les clés PGP";
+"PgpCopyPublicAndPrivateKeyToPass." = "Copiez votre clé publique et privée au format ASCII-Armor dans Pass avec les noms \"gpg_key.pub\" et \"gpg_key\" (sans les guillemets) via iTunes. Revenez ensuite et cliquez sur \"Partage de fichiers iTunes\" pour terminer.";
+"KeyExpiredOrIncompatibleError."    = "La clé publique PGP peut être expirée ou incompatible avec la clé privée.";
+"WrongPassphraseError."             = "La phrase secrète de votre clé secrète PGP est incorrecte.";
+"PgpPublicKeyNotFoundError."        = "Clé publique PGP (%@) non trouvée.";
+"PgpPrivateKeyNotFoundError."       = "Clé privée PGP (%@) non trouvée.";
+"CannotImportFile"                  = "Impossible d'importer le fichier";
+"LoadFromFiles"                     = "Charger à partir d'un fichier";
+"FileCannotBeImported."             = "Une erreur s'est produite lors de l'importation du fichier '%@'. Veuillez vous assurer que son emplacement est lisible.";
+"RememberToRemoveKeyFromLocation."  = "N'oubliez pas de supprimer les fichiers des clés de leurs emplacements externes.";
+"KeyFileNotSet."                    = "Pour un type de clé au moins, il n'y a pas de fichier spécifié.";
+"HttpNotSecure"                     = "HTTP n'est pas sécurisé";
+"ReallyUseHttp?"                    = "Le protocole HTTP n'est pas sécurisé. Voulez-vous vraiment l'utiliser pour transférer le fichier de la clé privée ?";
+
+// App passcode
+"RemovePasscode"        = "Supprimer le code d'accès";
+"ChangePasscode"        = "Modifier le code d'accès";
+"SetPasscode"           = "Définir un code d'accès";
+"PasswordConfirmation"  = "Confirmation du code d'accès";
+"FillInAppPasscode."    = "Remplir le code d'accès pour Pass (au moins 4 caractères).";
+
+// Git signature
+"NotSet"                = "Non définie";
+"InvalidNameOrEmail"    = "Nom ou e-mail non valide";
+
+// Erase password store
+"ErasePasswordStoreData?"   = "Effacer les données du gestionnaire de mots de passe ?";
+"ErasePasswordStoreData"    = "Effacer les données du gestionnaire de mots de passe";
+"EraseExplanation."         = "Cela supprimera toutes les données et tous les paramètres locaux. Les données du gestionnaire de mots de passe sur votre serveur distant ne seront pas affectées.";
+"Erasing..."                = "Effacement...";
+
+// Discard local changes
+"DiscardAllLocalChanges?"   = "Annuler toutes les modifications locales ?";
+"DiscardAllLocalChanges"    = "Annuler toutes les modifications locales";
+"DiscardExplanation."       = "Voulez-vous supprimer définitivement toutes les modifications apportées à la copie locale de vos données de mots de passe ? Vous ne pouvez pas annuler cette action.";
+"Resetting..."              = "Réinitialisation...";
+
+// Forget passcode
+"ForgotYourPasscode?"       = "Code d'accès oublié ?";
+"ResetPass"                 = "Réinitialiser Pass";
+"ResetPassExplanation."     = "La seule chose que vous pouvez faire est de réinitialiser l'application. Cela supprimera toutes les données et tous les paramètres locaux. Les données du gestionnaire de mots de passe sur votre serveur distant ne seront pas affectées.";
+
+// Time related
+"Unknown"   = "Inconnu";
+"JustNow"   = "À l'instant";
+
+// Commit messages
+"AddPassword."     = "Ajout du mot de passe pour %@ en utilisant Pass pour iOS.";
+"RemovePassword."  = "Suppression du mot de passe pour %@ en utilisant Pass pour iOS.";
+"EditPassword."    = "Edition du mot de passe pour %@ en utilisant Pass pour iOS.";
+"RenamePassword."  = "Renommage du mot de passe pour %@ en %@ en utilisant Pass pour iOS.";
+
+// Menu buttons
+"Ok"        = "OK";
+"Cancel"    = "Annuler";
+"Dismiss"   = "Annuler";
+"Done"      = "Terminé";
+"Yes"       = "Oui";
+"No"        = "Non";
+"TryAgain"  = "Réessayer";
+"Delete"    = "Supprimer";
+"Back"      = "Retour";
+"Current"   = "Actuel";
+"All"       = "Tout";
+"On"        = "On";
+"Off"       = "Off";
+"Save"      = "Enregistrer";
+"Remove"    = "Supprimer";
+
+// Lock screen
+"EnterPasscode"         = "Saisissez le code d'accès pour Pass";
+"Passcode"              = "Code d'accès";
+"TouchId"               = "Touch ID";
+"FaceId"                = "Face ID";
+"AuthenticationNeeded." = "Une authentification est nécessaire pour accéder à Pass.";
+
+// About repository
+"AboutRepository"       = "À propos du dépôt";
+"ValueNotAvailable"     = "Valeur non disponible";
+"Size"                  = "Taille";
+"LocalCommits"          = "Commits locaux";
+"LastSynced"            = "Dernier synchronisé";
+"Commits"               = "Commits";
+"CommitLogs"            = "Commit Logs";
+"SyncAgain?"            = "Oops! Synchroniser à nouveau ?";
+
+// About app
+"Website"               = "Site web";
+"Help"                  = "Aide";
+"ContactDeveloper"      = "Contacter le développeur";
+"OpenSourceComponents"  = "Composants Open Source";
+"SpecialThanks"         = "Remerciements particuliers";
+"Acknowledgements"      = "Remerciements";
+"ValueNotAvailable"     = "Valeur non disponible";
+
+// External applications
+"CannotOpenMail"    = "Impossible d'ouvrir l'application Mail";
+"CopiedEmail"       = "L'adresse e-mail %@ a été copiée";
+"HttpNotSupported." = "La connexion HTTP n'est pas prise en charge.";
+
+// Password view
+"Name"                          = "Nom";
+"Additions"                     = "Ajouts";
+"Notice"                        = "Avis";
+"PreviousChangesDiscarded."     = "Toutes les modifications locales précédentes ont été supprimées. Votre gestionnaire de mots de passe actuel sera affiché.";
+"CannotShowPassword"            = "Impossible d'afficher le mot de passe";
+"PasswordDoesNotExist"          = "Le mot de passe n'existe pas.";
+"Saving"                        = "Enregistrement";
+"Success"                       = "Succès";
+"OneTimePassword"               = "Mot de passe à usage unique";
+"ShowRaw"                       = "Afficher les données brutes";
+"Reveal"                        = "Révéler";
+"Conceal"                       = "Dissimuler";
+"NextPassword"                  = "Mot de passe suivant";
+"CopyAndOpen"                   = "Copier le mot de passe et ouvrir le lien";
+"GetNextPasswordOfNonHotp."     = "Obtenir le prochain mot de passe d'une entrée non HOTP.";
+"PasswordCopied"                = "Mot de passe copié";
+"CounterUpdated"                = "Compteur mis à jour";
+"CannotFindValidUrl"            = "Impossible de trouver une URL valide";
+"LastUpdated"                   = "Dernière mise à jour: %@";
+"PasswordCopiedToPasteboard."   = "Mot de passe copié. Le presse-papiers sera effacé dans 45 secondes.";
+
+// Password editor
+"UseKeyValueFormat."                = "Utilisez le format \"key : value\" pour les champs supplémentaires.";
+"DeletePassword"                    = "Supprimer le mot de passe";
+"AddOneTimePassword"                = "Ajouter un mot de passe à usage unique";
+"Length"                            = "Longueur";
+"VaryCases"                         = "Majuscules aléatoires";
+"Digits"                            = "Chiffres";
+"SpecialSymbols"                    = "Caractères spéciaux";
+"Groups"                            = "Organiser en groupes";
+"DeletePassword?"                   = "Supprimer le mot de passe ?";
+"OverwriteOtpConfiguration?"        = "Écraser la configuration du mot de passe à usage unique ?";
+"ValidTokenUrl"                     = "Jeton de l'URL valide";
+"InvalidTokenUrl"                   = "Jeton de l'URL invalide";
+"FillInName."                       = "Veuillez renseigner le nom.";
+"RemovePrefix."                     = "Veuillez retirer le préfixe \"/\" de votre nom de mot de passe.";
+"PasswordNameInvalid."              = "Le nom du mot de passe est invalide.";
+"CannotParseFilename."              = "Impossible d'analyser le nom de fichier. Veuillez vérifier et simplifier le nom du mot de passe.";
+"WannaUseIt?"                       = "Vous voulez l'utiliser ?";
+"SeemsLikeYouHaveCopiedSomething."  = "Il semble que vous ayez copié quelque chose.";
+"FirstStringIs:"                    = "La première chaîne de caractères est :";
+
+// Multiline strings
+"SshAsciiArmorCopyExplanation." = "Le format de la clé \"ASCII-Armor\" est similaire aux documents non encodés plutôt qu'au format binaire. Utilisez
+
+  $ cat ~/.ssh/id_rsa
+
+pour obtenir la clé dans ce format spécifique. Le presse-papiers sera effacé 45s après la copie.";
+
+"SshAsciiArmorServerExplanation." = "The ASCII-armored key format is similar to unencoded documents rather than the binary format. Use
+
+  $ cat ~/.ssh/id_rsa
+
+to get the key in this specific format. Subsequently, copy it to your secured key server.";
+
+"SshAsciiArmorFileExplanation." = "The ASCII-armored key format is similar to unencoded documents rather than the binary format. Use
+
+  $ cat ~/.ssh/id_rsa
+
+to get the key in this specific format. Subsequently, copy it to a location accessible by the Files app.";
+
+"GpgAsciiArmorCopyExplanation." = "GnuPG supports the command-line option \"-a\" that causes output to be generated in an ASCII-armored format similar to unencoded documents rather than the binary format. Use
+
+  $ gpg --list-keys
+
+to identify your encryption (E) subkey's KEY_ID, then use
+
+  $ gpg --export -a KEY_ID! > subkey.pub
+  $ gpg --export-secret-subkeys -a KEY_ID! > subkey
+
+to get the public and the encryption private subkeys in this specific format. Check that no authentication subkey is accidentally exported:
+
+  $ gpg --show-key subkey
+
+The clipboard will be cleared 45s after pasting.";
+
+"GpgAsciiArmorServerExplanation." = "GnuPG supports the command-line option \"-a\" that causes output to be generated in an ASCII-armored format similar to unencoded documents rather than the binary format. Use
+
+  $ gpg --list-keys
+
+to identify your encryption (E) subkey's KEY_ID, then use
+
+  $ gpg --export -a KEY_ID! > subkey.pub
+  $ gpg --export-secret-subkeys -a KEY_ID! > subkey
+
+to get the public and the encryption private subkeys in this specific format. Check that no authentication subkey is accidentally exported:
+
+  $ gpg --show-key subkey
+
+Finally, copy them to your (local) HTTP(S) server.";
+
+"GpgAsciiArmorFileExplanation." = "GnuPG supports the command-line option \"-a\" that causes output to be generated in an ASCII-armored format similar to unencoded documents rather than the binary format. Use
+
+  $ gpg --list-keys
+
+to identify your encryption (E) subkey's KEY_ID, then use
+
+  $ gpg --export -a KEY_ID! > subkey.pub
+  $ gpg --export-secret-subkeys -a KEY_ID! > subkey
+
+to get the public and the encryption private subkeys in this specific format. Check that no authentication subkey is accidentally exported:
+
+  $ gpg --show-key subkey
+
+Finally, copy them to a location accessible by the Files app.";
